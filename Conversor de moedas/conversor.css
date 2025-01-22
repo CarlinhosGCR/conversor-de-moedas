@@ -51,6 +51,10 @@
     outline: none;
 }
 
+option{
+    background-color: #FFF;
+}
+
 .inputs::placeholder {
     color: #555;
     font-size: 16px;
@@ -66,6 +70,10 @@
 .inputs:last-of-type {
 
     box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+b{
+    background-color:#F4F4F4 ;
 }
 
 button {
@@ -146,6 +154,13 @@ button:active {
     margin: 21px 137px 0px;
 }
 
+.euro{
+    background: #F4F4F4;
+    width: 44px;
+    height: 44px;
+    margin: 21px 137px 0px;
+    display:none;
+}
 
 .dolar {
     color: #777;
