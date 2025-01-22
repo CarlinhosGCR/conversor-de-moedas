@@ -166,3 +166,48 @@ button:active {
     background: #F4F4F4;
     text-align: center;
 }
+
+@media screen and (max-width: 1630px) {
+
+    .GIF {
+        left: 40%;
+        right: auto;
+    }
+
+    .box-1 {
+        left: 30%;
+        right: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    * {
+        background-color: #F4F4F4
+    }
+
+    .GIF {
+        display: none;
+    }
+
+    .box-1 {
+        height: 400px;
+        left:30%;
+        right:auto;
+    }
+}
+@media screen and (max-width:600px){
+
+    .GIF{
+        display:none;
+    }
+
+    .box-1{
+
+        height:400px;
+        left:15px;
+        right:auto;
+        
+    }
+}
