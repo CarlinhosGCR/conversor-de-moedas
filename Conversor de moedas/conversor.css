@@ -159,7 +159,7 @@ button:active {
     width: 44px;
     height: 44px;
     margin: 21px 137px 0px;
-    display:none;
+   display: none;
 }
 
 .dolar {
@@ -181,6 +181,30 @@ button:active {
     background: #F4F4F4;
     text-align: center;
 }
+
+.euro-moeda{
+    color: #777;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    background: #F4F4F4;
+    text-align: center;
+    display: none;
+}
+
+.euro-moeda-2{
+    color: #555;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    background: #F4F4F4;
+    text-align: center;
+display: none;
+}
+
+
 
 @media screen and (max-width: 1630px) {
 
