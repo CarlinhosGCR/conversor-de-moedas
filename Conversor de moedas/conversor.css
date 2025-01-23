@@ -25,7 +25,6 @@
     left: 740px;
 }
 
-
 .nome-label {
     color: #777;
     font-size: 14px;
@@ -51,7 +50,7 @@
     outline: none;
 }
 
-option{
+option {
     background-color: #FFF;
 }
 
@@ -72,8 +71,8 @@ option{
     box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.15);
 }
 
-b{
-    background-color:#F4F4F4 ;
+b {
+    background-color: #F4F4F4;
 }
 
 button {
@@ -154,12 +153,12 @@ button:active {
     margin: 21px 137px 0px;
 }
 
-.euro{
+.euro {
     background: #F4F4F4;
     width: 44px;
     height: 44px;
     margin: 21px 137px 0px;
-   display: none;
+    display: none;
 }
 
 .dolar {
@@ -182,7 +181,7 @@ button:active {
     text-align: center;
 }
 
-.euro-moeda{
+.euro-moeda {
     color: #777;
     font-size: 14px;
     font-style: normal;
@@ -193,7 +192,7 @@ button:active {
     display: none;
 }
 
-.euro-moeda-2{
+.euro-moeda-2 {
     color: #555;
     font-size: 20px;
     font-style: normal;
@@ -201,7 +200,7 @@ button:active {
     line-height: 18px;
     background: #F4F4F4;
     text-align: center;
-display: none;
+    display: none;
 }
 
 
@@ -232,21 +231,22 @@ display: none;
 
     .box-1 {
         height: 400px;
-        left:30%;
-        right:auto;
+        left: 30%;
+        right: auto;
     }
 }
-@media screen and (max-width:600px){
 
-    .GIF{
-        display:none;
+@media screen and (max-width:600px) {
+
+    .GIF {
+        display: none;
     }
 
-    .box-1{
+    .box-1 {
 
-        height:400px;
-        left:15px;
-        right:auto;
-        
+        height: 400px;
+        left: 15px;
+        right: auto;
+
     }
 }
