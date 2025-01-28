@@ -22,13 +22,13 @@
         <input placeholder="R$ Real brasileiro" class="inputs" disabled ></input>
 
         <label for="select" class="nome-label">Converter <b>para</b></label>
-        <select placeholder="US$ Dólar americano" class="inputs" type="text" id="select" onchange="mudarvalores_moeda()">
+        <select placeholder="US$ Dólar americano" class="select" type="text" id="select" onchange="mudarvalores_moeda()">
             <option value="6 R$" class="opcao1">US$ Dólar americano</option>
             <option value="6,18 €" class="opcao2">€ Euro</option>
         </select>
 
         <label for="" class="nome-label"><b>Valor</b></label>
-        <input type="number" placeholder="R$ 10.000,00" class="inputs" name="Input-digitável"></input>
+        <input type="number" placeholder="R$ 10.000,00" class="inputs" name="Input-digitável" step= 0.01></input>
 
         <button onclick="clicarNoBotao()" id="button">Converter</button>
 

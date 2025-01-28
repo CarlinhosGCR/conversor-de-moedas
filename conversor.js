@@ -48,18 +48,20 @@ input.addEventListener("input", () => {
 
 })
 
+//Função para quando não houver nada digitado voltar ao value do placeholder//
 input.addEventListener("blur", () => {
     if (input.value === "") {
         pReal.textContent = "R$ 10.000,00";
     }
 });
 
+//Função para converter os valores//
 button.addEventListener("click", ()=>{
  
 if( select.value=== "6,18 €"){
-pEuro2.textContent =`${(input.value / 6.18).toFixed(2)}`
+pEuro2.textContent =`${(input.value / 6.18).toFixed(6)}`
   }else{ 
-    pDolar2.textContent = `${(input.value / 6).toFixed(2)}`
+    pDolar2.textContent = `${(input.value / 6).toFixed(6)}`
   } 
 })
 
