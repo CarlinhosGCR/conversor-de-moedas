@@ -53,6 +53,9 @@
 option {
     background-color: #FFF;
 }
+select{
+    text-align: center;
+}
 
 .inputs::placeholder {
     color: #555;

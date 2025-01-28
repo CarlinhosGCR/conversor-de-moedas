@@ -1,7 +1,11 @@
+//Mapeamento do input de seleção//
 const select = document.getElementById("select")
-const opcao1 = document.getElementsByClassName("opcao1")[0]
-const opcao2 = document.getElementsByClassName("opcao2")[0]
+
+//Mapeamento do input digitável com o parágrafo da moeda de origem//
+const pReal = document.getElementsByClassName("real-2")[0]
 const input = document.getElementsByName("Input-digitável")[0]
+
+//Mapeamento das imagens e parágrafos que mudam com a seleção do usuário//
 const imgEua = document.getElementsByClassName("estados-unidos")[0]
 const imgEuro = document.getElementsByClassName("euro")[0]
 const pDolar = document.getElementsByClassName("dolar")[0]
@@ -9,25 +13,55 @@ const pDolar2 = document.getElementsByClassName("dolar-2")[0]
 const pEuro = document.getElementsByClassName("euro-moeda")[0]
 const pEuro2 = document.getElementsByClassName("euro-moeda-2")[0]
 
-function mudarvalores_moeda(){
+//mapeamento do botão//
+const button = document.getElementById("button")
 
-    if(select.value==="6,18 €"){
+//Função para mudar elemento da DOM quando o usuário selecionar modedas diferentes//
+function mudarvalores_moeda() {
 
-        imgEua.style.display="none"
-        pDolar.style.display="none"
-        pDolar2.style.display="none"
+    if (select.value === "6,18 €") {
 
-        imgEuro.style.display="block"
-        pEuro.style.display="block"
-        pEuro2.style.display="block"
+        imgEua.style.display = "none"
+        pDolar.style.display = "none"
+        pDolar2.style.display = "none"
 
-    } else{
-        imgEua.style.display="block"
-        pDolar.style.display="block"
-        pDolar2.style.display="block"
+        imgEuro.style.display = "block"
+        pEuro.style.display = "block"
+        pEuro2.style.display = "block"
 
-        imgEuro.style.display="none"
-        pEuro.style.display="none"
-        pEuro2.style.display="none"
+    } else {
+        imgEua.style.display = "block"
+        pDolar.style.display = "block"
+        pDolar2.style.display = "block"
+
+        imgEuro.style.display = "none"
+        pEuro.style.display = "none"
+        pEuro2.style.display = "none"
     }
 }
+
+//Função para quadno o usuário digitar no input para mudar o parágrafo//
+input.addEventListener("input", () => {
+
+    const valor = input.value;
+    pReal.textContent = `${valor}`
+
+})
+
+input.addEventListener("blur", () => {
+    if (input.value === "") {
+        pReal.textContent = "R$ 10.000,00";
+    }
+});
+
+button.addEventListener("click", ()=>{
+ 
+if( select.value=== "6,18 €"){
+pEuro2.textContent =`${(input.value / 6.18).toFixed(2)}`
+  }else{ 
+    pDolar2.textContent = `${(input.value / 6).toFixed(2)}`
+  } 
+})
+
+
+
