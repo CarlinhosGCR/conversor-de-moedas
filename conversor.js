@@ -59,9 +59,9 @@ input.addEventListener("blur", () => {
 button.addEventListener("click", ()=>{
  
 if( select.value=== "6,18 €"){
-pEuro2.textContent =`${(input.value / 6.18).toFixed(6)}`
+pEuro2.textContent =`${(input.value / 6.18).toFixed(2)}`
   }else{ 
-    pDolar2.textContent = `${(input.value / 6).toFixed(6)}`
+    pDolar2.textContent = `${(input.value / 6).toFixed(2)}`
   } 
 })
 
