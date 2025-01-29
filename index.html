@@ -13,33 +13,41 @@
 
 <body>
 
+    <!-- Imagem do Logo-->
     <img src="assets/GIF.gif" alt="Dinheiro nas mãos" class="GIF">
 
+    <!--Primeira box do site-->
     <div class="box-1">
 
-
+        <!-- Primeiro input da moeda de origem (não alterável)-->
         <label for="" class="nome-label">Converter <b>de</b></label>
-        <input placeholder="R$ Real brasileiro" class="inputs" disabled ></input>
+        <input placeholder="R$ Real brasileiro" class="inputs" disabled></input>
 
+        <!--Select para selecionar qual moeda de qual país o usuário quer fazer a conversão-->
         <label for="select" class="nome-label">Converter <b>para</b></label>
-        <select placeholder="US$ Dólar americano" class="select" type="text" id="select" onchange="mudarvalores_moeda()">
+        <select placeholder="US$ Dólar americano" class="select" type="text" id="select"
+            onchange="mudarvalores_moeda()">
             <option value="6 R$" class="opcao1">US$ Dólar americano</option>
             <option value="6,18 €" class="opcao2">€ Euro</option>
         </select>
 
+        <!-- Input e button para digitar o valor que o usuário queira converter clicando no button-->
         <label for="" class="nome-label"><b>Valor</b></label>
-        <input type="number" placeholder="R$ 10.000,00" class="inputs" name="Input-digitável" step= 0.01></input>
-
+        <input type="number" placeholder="R$ 10.000,00" class="inputs" name="Input-digitável" step=0.01></input>
         <button onclick="clicarNoBotao()" id="button">Converter</button>
 
-        <div class="box-3">
+        <!-- Segunda box do site para separar os elementos alteraveis pelo JavaScript de acordo com a opção do usuário-->
+        <div class="box-2">
             <img src="assets/brasil 2.png" alt="Bandeira do Brasil" class="brasil">
 
+<!--Parágrafo "real-2"  alterável de acordo com o que é digitado no input-->
             <p class="real">Real R$</p>
             <p class="real-2">R$ 10.000,00</p>
 
+            <!-- Imagem de seta -->
             <img src="assets/Vector.png" alt="Seta" class="seta">
 
+            <!-- Imagens/Parágrafos alteráveis pelo JavaScript de acordo com a seleção do usuário -->
             <img src="assets/estados-unidos (1) 1.png" alt="Bandeira dos Estados Unidos" class="estados-unidos">
             <img src="assets/Euro.png.png" class="euro">
             <p class="dolar">Dólar Americano</p>
@@ -50,5 +58,4 @@
     </div>
 </body>
 <script src="./conversor.js"></script>
-
 </html>
