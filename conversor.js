@@ -44,23 +44,42 @@ function mudarvalores_moeda() {
 input.addEventListener("input", () => {
 
     const valor = input.value;
-    pReal.textContent = `${valor}`
-
-})
+    const formato = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+      });
+      pReal.textContent = formato.format(valor);
+    });
+    
 
 //Função para quando não houver nada digitado voltar ao value do placeholder//
 input.addEventListener("blur", () => {
     if (input.value === "") {
-        pReal.textContent = "R$ 10.000,00";
-    }
-});
+        const formato = new Intl.NumberFormat('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+          });
+          pReal.textContent = formato.format(10000);
+        }
+      });
 
 //Função para converter os valores//
-button.addEventListener("click", ()=>{
- 
-if( select.value=== "6,18 €"){
-pEuro2.textContent =`${(input.value / 6.18).toFixed(2)}`
-  }else{ 
-    pDolar2.textContent = `${(input.value / 6).toFixed(2)}`
-  } 
-})
+button.addEventListener("click", () => {
+
+    if (select.value === "6,18 €") {
+        const valor = input.value;
+        const formato = new Intl.NumberFormat('pt-BR', {
+          style: 'currency',
+          currency: 'EUR'
+        });
+        pEuro2.textContent = formato.format(valor / 6.18);
+      } else {
+        const valor = input.value;
+        const formato = new Intl.NumberFormat('pt-BR', {
+          style: 'currency',
+          currency: 'USD'
+        });
+        pDolar2.textContent = formato.format(valor / 6);
+      }
+    });
+    

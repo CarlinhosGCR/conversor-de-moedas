@@ -54,7 +54,8 @@
 option {
     background-color: #FFF;
 }
-select{
+
+select {
     text-align: center;
     width: 327px;
     height: 48px;
